@@ -1,13 +1,17 @@
 TODOs
 =====
 
-- Install Chrome for Linux
-- Install a good terminal
-- Auto-start tmux then terminal is started.
-- Select good fonts for both terminal and Emacs
+- Search for a list of good console fonts and how to install them on Ubuntu.
+- Create terminal emulator comparison sheet in Google Spreadsheet.
+- Add xfce-terminal to the comparison sheet.
 
+- Select good fonts for both terminal and Emacs
 - Git exercise: pulling non-conflicting changes from Master
 - Git exercise: merge conflicts. How do other tools handle this?
+- SSH menu for common SSH targets
+- Configure default credentials for Azure DevOps. Configure individual
+  projects for github.
+- Install packer.io
 
 
 Steps
@@ -33,3 +37,20 @@ Steps
    5. Delete Firefox using
 
       sudo apt remove firefox firefox-locale-en
+
+Configure XFCE Terminal
+   Open terminal preferences
+       Advanced
+          - Disable all menu access keys
+	  - disable menu shortcut key
+	  - Disable help window shortcut key	
+	  - Automatically copy selection to clipboard
+   These settings are stored in ~/.config/xfce4/terminal/terminalrc
+
+Configure git global for main / corporate settings
+
+git config --global user.name "Sandor Juhasz"
+git config --global user.email "sandor.juhasz@ni.com"
+
+user.name=Sandor Juhasz
+user.email=sandor.juhasz@ni.com

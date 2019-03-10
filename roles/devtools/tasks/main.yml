@@ -8,6 +8,8 @@
       - zsh
       - mc
       - git
+      - jq
+      - xubuntu-desktop
 
 - name: Install potential packages
   apt:
