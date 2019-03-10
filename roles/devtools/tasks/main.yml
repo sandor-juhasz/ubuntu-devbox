@@ -6,7 +6,17 @@
       - shellcheck
       - tmux
       - zsh
+      - mc
+      - git
 
+- name: Install potential packages
+  apt:
+    name:
+      - meld
+      - gitk
+      - gitg
+      - git-cola
+    
 - name: Install Python-based packages
   pip:
     name:
